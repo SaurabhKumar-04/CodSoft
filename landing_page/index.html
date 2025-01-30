@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study help</title>
+    <link  rel="stylesheet" href="index.css">
+    <link rel="Icon" href="icons8-book-and-pencil-50.png">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar_left">
+                <img src="icons8-book-and-pencil-50.png" alt="open book Icon">
+                <input type="search" placeholder="Search" class="navbar_search">
+            </div>
+            <div class="navbar_right">
+                <div class="navbar_menu_div">
+                <label for="course" id="course_label">Courses</label>
+                <select class="navbar_menu" id="Course" name="course">
+                    <!-- <option align="center" value="courses">Courses</option> -->
+                    <option value="Fullstack: A to Z">Fullstack: A to Z</option>
+                    <option value="DSA - Zero to Hero">DSA - Zero to Hero</option>
+                    <option value="English - indian to britain">English - indian to britain</option>
+                    <option value="Cloud Computing">Cloud Computing</option>
+                    <option value="Data Anylyst with Python">Data Anylyst with Python</option>
+                </select></div>
+                <div class="navbar_menu_div">
+                <label for="Programming" id="Programming_label">Programming</label>
+                <select class="navbar_menu" id="Programming" name="Programming">
+                    <!-- <option align="center" Problem Solving value="Programming">Programming</option> -->
+                    <option value="DSA">DSA</option>
+                    <option value="Problem Solving">Problem Solving</option>
+                    <option value="Competitive Programming">Competitive Programming</option>
+                    <option value="Frontend Development">Frontend Development</option>
+                    <option value="Backend Development">Backend Development</option>
+                </select></div>
+                <div class="navbar_menu_div">
+                <label for="subjects" id="subjects_label">Subjects</label>
+                <select  class="navbar_menu" id="Subjects" name="Subjects">
+                    <!-- <option align="center" value="Subjects">Subjects</option> -->
+                    <option value="Operating System">Operating System</option>
+                    <option value="Computer Networks">Computer Networks</option>
+                    <option value="Computer Architecture">Computer Architecture</option>
+                    <option value="Data Structures">Data Structures</option>
+                    <option value="Data Analysis and algorithm">Data Analysis and algorithm</option>
+                </select></div>
+                <div class="navbar_menu_div">
+                <label for="competitive_exam" id="competitive_exam_label">Competitive Exam</label>
+                <select class="navbar_menu" id="Competitive_exams" name="Competitive Exams">
+                    <!-- <option align="center" value="Competitive Exams">Competitive Exams</option> -->
+                    <option value="JEE">JEE</option>
+                    <option value="NDA">NDA</option>
+                    <option value="NEET">NEET</option>
+                    <option value="SSC">SSC</option>
+                    <option value="GATE">GATE</option>
+                </select></div>
+                <div class="navbar_menu_div"> 
+                <a class="navbar_menu" id="question" href="#question_form" target="">Ask a Question</a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <div class="front_page">
+
+        <div class="front_page_desc">
+            <h2>WELCOME TO STUDY HELP</h2>
+            <p> Your final destination for all your University Exams, Coding question, Competitive exams, assigments,
+                notes and many more.</p>
+        </div>
+    </div>
+    <div class="subjects_page">
+        <div class="subjects" id="subject_cards">
+            <div class="subject_div">
+            <div  class="subject_front"  id="sub1_front">Data Structure and Algorithm</div>
+            <div id="sub1_back" class="subject_back">
+                <a href="" target="" id="">Handwritten Notes</a>
+                <a href="" target="" id="">Digital Notes</a>
+                <a href="" target="" id="">Important Questions</a>
+                <a href="" target="" id="Lectures">Lectures</a>
+                <a href="" target="" id="">Youtube</a>
+                <a href="" target="" id="">Course by StudyHelp</a>
+            </div></div>
+            <div class="subject_div">
+            <div  class="subject_front"  id="sub2_front">Operating System</div>
+            <div id="sub2_back" class="subject_back">
+                <a href="" target="" id="">Handwritten Notes</a>
+                <a href="#" target="" id="">Digital Notes</a>
+                <a href="" target="" id="">Important Questions</a>
+                <a href="" target="" id="Lectures">Lectures</a>
+                <a href="" target="" id="">Youtube</a>
+                <a href="" target="" id="">Course by StudyHelp</a>
+            </div></div>
+            <div class="subject_div">
+            <div  class="subject_front" id="sub3_front">Computer Network</div>
+            <div id="sub3_back" class="subject_back">
+                <a href="" target="" id="">Handwritten Notes</a>
+                <a href="" target="" id="">Digital Notes</a>
+                <a href="" target="" id="">Important Questions</a>
+                <a href="" target="" id="Lectures">Lectures</a>
+                <a href="" target="" id="">Youtube</a>
+                <a href="" target="" id="">Course by StudyHelp</a>
+            </div></div>
+            <div class="subject_div">
+            <div class="subject_front"  id="sub4_front">JavaScript</div>
+            <div id="sub4_back" class="subject_back">
+                <a href="" target="" id="">Handwritten Notes</a>
+                <a href="" target="" id="">Digital Notes</a>
+                <a href="" target="" id="">Important Questions</a>
+                <a href="" target="" id="Lectures">Lectures</a>
+                <a href="" target="" id="">Youtube</a>
+                <a href="" target="" id="">Course by StudyHelp</a>
+            </div></div>
+        </div>
+    </div>
+    <div class="askhelp_page" id="question_form">
+    <div class="askhelp">
+        <h2>ASK HELP</h2>
+        <form class="askhelp_form">
+            <label for="name" id="askhelp_name">Name</label>
+            <input type="text" placeholder="Enter Your Name" name="name" class="askhelp_form_inputs" id="name">
+            <label for="name" id="askhelp_number">Mobile Number</label>
+            <input type="number" placeholder="Enter Mobile Number" name="number" class="askhelp_form_inputs"
+                id="number">
+            <label for="askhelp_Subjects" id="subject">Subject </label>
+            <select class="askhelp_form_inputs" id="askhelp_Subjects" name="askhelp_Subjects">
+                <option value="Subjects">Select Subject</option>
+                <option value="Operating System">Operating System</option>
+                <option value="Computer Networks">Computer Networks</option>
+                <option value="Computer Architecture">Computer Architecture</option>
+                <option value="Data Structures">Data Structures</option>
+                <option value="Data Analysis and algorithm">Data Analysis and algorithm</option>
+            </select>
+            <label for="query" id="askhelp_query">Ask Your Query</label>
+            <textarea placeholder="Ask Your Query" name="query" id="query" class="askhelp_form_inputs"></textarea>
+            <button class="submit_buttons" type="submit" id="askhelp_submit">Submit</button>
+        </form>
+    </div>
+</div>
+    <div class="last_page">
+        <h2>Thanks for visiting STUDYHELP!</h2>
+        <div class="last_page_main">
+            
+            <a>About us</a>
+            <a>Buy Our Course</a>
+            <a>Feedback</a>
+            <a>Support us</a>
+            <a id="linkedin_link" href="www.linkedin.com/in/saurabh-kumar004">Contact us</a>
+        </div>
+        <div class="contact_us">
+
+        </div>
+    </div>
+</body>
+
+</html>
